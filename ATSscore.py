@@ -5,6 +5,7 @@ import PyPDF2 as pdf
 from dotenv import load_dotenv
 import json
 
+api = st.secrets.api
 genai.configure(api_key=api)
 
 def get_gemini_repsonse(input):
